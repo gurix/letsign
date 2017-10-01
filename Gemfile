@@ -5,7 +5,16 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+# Slim generators for Rails 3+.
+gem 'slim-rails'
+
 gem 'pg'
+
+# Central point to collect locale data for use in Ruby on Rails.
+gem 'rails-i18n', '~> 5.0.0'
+
+# RouteTranslator is a gem to allow you to manage the translations of your app routes with a simple dictionary format.
+gem 'route_translator'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.4'
