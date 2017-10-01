@@ -1,0 +1,25 @@
+AllCops:
+  Include:
+    - Rakefile
+    - Gemfile
+    - config.ru
+  Exclude:
+    - bin/**
+    - config/**/*
+    - db/**
+
+Documentation:
+  Enabled: false
+LineLength:
+  Enabled: true
+  Max: 160
+AbcSize:
+  Enabled: false
+FrozenStringLiteralComment:
+  Enabled: false
+AsciiComments:
+  Enabled: false
+
+BlockLength:
+  Exclude:
+    - spec/**/*
